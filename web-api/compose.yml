@@ -49,6 +49,17 @@ services:
       - "8025:8025"
     networks:
       - dev
+  node:
+    build:
+      context: ./docker/node
+    container_name: web-assets
+    command: sh -c "pnpm i && pnpm dev"
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/home/node/app
+    networks:
+      - dev
 
 volumes:
   mysql_data:
