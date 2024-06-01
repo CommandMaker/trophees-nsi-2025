@@ -7,14 +7,14 @@ export default defineConfig({
     plugins: [
         laravel({
             input: ['resources/css/app.scss', 'resources/js/app.ts'],
-            refresh: true,
+            refresh: true
         }),
         vuePlugin()
     ],
     resolve: {
         alias: {
-            '~' : path.join(__dirname, './resources/js'),
-            'vue': 'vue/dist/vue.esm-bundler.js'
+            '~': path.join(__dirname, './resources/js'),
+            vue: 'vue/dist/vue.esm-bundler.js'
         }
     }
 });

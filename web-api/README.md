@@ -20,9 +20,11 @@ docker-compose build
 docker-compose up
 docker compose exec php artisan migrate
 ```
+
 The API will be served on port `8000`, phpmyadmin on the port `8080` and MailHog on the port `8025`
 
 ## Contribute
+
 If you want to contribute (and we thank you for that) just be sure that the code follow the coding standards of the project
 
 ```bash
@@ -30,4 +32,5 @@ make tt     # Run phpstan & php-cs
 pnpm lint   # Lint the frontend code
 pnpm format # Run prettier
 ```
+
 Code contributions are open. Feel free to clone, edit, or fork the project as you wish.

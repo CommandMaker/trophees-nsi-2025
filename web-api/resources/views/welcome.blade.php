@@ -6,7 +6,6 @@
         <title>Premiers Secours</title>
 
         @vite('resources/js/app.ts')
-
     </head>
     <body>
         <div id="app">

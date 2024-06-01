@@ -6,7 +6,6 @@ import HelloWorld from '~/HelloWorld.vue';
 
 const app = createApp({});
 
-app.component('hello-world', HelloWorld)
+app.component('hello-world', HelloWorld);
 
 app.mount('#app');
-
