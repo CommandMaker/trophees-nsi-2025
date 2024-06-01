@@ -1,0 +1,12 @@
+includes:
+  - vendor/larastan/larastan/extension.neon
+
+parameters:
+  paths:
+    - app/
+    - tests/
+    - routes/
+    - database/
+
+  # This is the maximum level if PHPStan (0-9)
+  level: 9
